@@ -3,7 +3,7 @@ import pandas as pd
 
 st.title("그래프 그리기")
 
-file = st.file_uploader("CSV 파일을 올려주세요", type=['csv'])
+file = st.file_uploader("CSV 파일 선택", type=['csv'])
 
 if file:
     df = pd.read_csv(file)
